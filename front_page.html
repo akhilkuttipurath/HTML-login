@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html >
+	<head>
+		<script>
+		var users = [{"username": "akhil", "password":"akhil"},{"username": "ranjith", "password":"ranjith"},{"username": "akash", "password":"akash"}];
+		var flag = false;
+		function verification(){
+			var user = document.getElementById("username").value;
+			var pass = document.getElementById("password").value;
+			for(var i=0; i<users.length; i++){
+				if(users[i].username == user && users[i].password == pass){
+					flag = true;
+					break;
+				}
+			}
+			if(flag == true){
+				window.location.href = "/home/akhil/Documents/project/Quote gallery/quotepage/quote_page files/quote_page.html";
+			}
+			else
+				alert('invalid username or password');
+		}
+
+		function new_cus(){
+			
+			document.getElementById('log').style.display = 'none';
+            document.getElementById('newcus').style.display = 'block';
+
+		} 
+
+		</script>
+		<link rel="stylesheet" type="text/css" href="front_page.css" />
+  		<title>Quote Gallery</title>  
+	</head>
+ 	<body>
+ 		<div class="container">
+			<header><b>Welcome To Quote - Gallery!!!</b></header>
+			
+			<h1><b><div align="center">Today's Quote</div><b></h1>
+			<nav><img src="/home/akhil/Documents/project/Login_page/images/gentle.jpg" style="width:500px;height:100%"></nav>
+			<section>
+
+				<div class="today">
+					<marquee behavior="alternate"><p><i>"Live as if you were to die tomorrow. Learn as if you were to live forever"<i></marquee>
+				</div></p>	
+					<div id="log" class="login">
+				 	<h2>Login to  Quote Gallery</h2>
+				 	<img class="leftimage" src="/home/akhil/Documents/project/Login_page/images/login.jpg">
+	 			 	<form>
+	   			 	<p><input id="username" required type="text" name="login"  placeholder="Username or Email"></p>
+	    			<p><input id="password" required type="password" name="password" placeholder="Password"></p>
+	    			<p class="remember_me">
+	      			<label>
+	        		<input type="checkbox" name="remember_me" id="remember_me">
+	        			Remember me on this computer
+	      			</label>
+	    			</p>
+	    			<p class="submit"><input id="signin" type="button" value="login" onclick="verification()" ></p>
+	  				</form>
+	  				<p class="signup" align="right"><i>Not a user yet? <a href="#" onclick="new_cus()">Click here to SignUp!!!</a></i></p>
+	    		</div>	
+	    		<div id="newcus" class="newcustomer">
+	    			<h3 style="text-align:center;color:#778899;"><u>Registration form</u></h3>
+						<form style="color:#778899;">
+							<div class="name">
+								First name  <br>
+								Last name <br>
+								Choose your user name<br>
+								Create a password<br>
+								Birthday<br>
+								Genter<br>
+								email id<br>
+
+							</div>
+							<input id="fname" type="text" name="firstname"><br>
+							<input id="lname" type="text" name="lastname"><br>
+							<input id="uname" type="text" name="username"><br>
+							<input id="pswd" type="password" name="password2"><br>
+							<select>
+							 	<option value="jan">january</option>
+							 	<option value="feb">february</option>
+							 	<option value="mar">march</option>
+							 	<option value="apr">april</option>
+                                <option value="may">may</option>
+                                <option value="jun">june</option>
+                                <option value="jul">july</option>
+                                <option value="aug">august</option>
+                                <option value="sept">september</option>
+                                <option value="oct">october</option>
+                                <option value="nov">november</option>
+                                <option value="dec">december</option>
+                                <input type="text" placeholder="day" id="day" name="day" size="4" maxlength="2">
+                                <input type="text" placeholder="year" id="year" name="year" size="6" maxlength="4"><br>
+                           		<input type="radio" name="sex" value="male" checked>Male
+								<input type="radio" name="sex" value="female">Female<br>
+								<input type="email" name="email"><br>
+  								<input type="submit" id="submit" value="submit"/>
+							</select> 
+
+						</form>
+									
+	    		</div> 
+	    		
+	    	</section>	
+
+	    	
+	    </div>
+    </body>
+	<footer>
+	Copyright © Quotegallery.com
+	<p  align="right"><i> Posted by : AKHIL K<i/></p>
+	</footer>
+</html>
