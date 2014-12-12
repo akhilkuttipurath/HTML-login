@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <script>
+        function refresh(value){
+            document.getElementById('inspirational').style.display = 'none';
+            document.getElementById('love').style.display = 'none';
+            document.getElementById('happiness').style.display = 'none';
+            document.getElementById('music').style.display = 'none';
+        }
+        window.onload = function() {
+            refresh();
+            document.getElementById('inspirational').style.display = 'block';
+        } 
+        function myFunction(value){
+            refresh();
+            document.getElementById(value).style.display = 'block';
+        }
+        </script>
+        <link rel="stylesheet" type="text/css" href="quote_page.css">
+        <title> Quote gallery</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"><b>Quote~galleRy</b></div>
+            <div class="today"><b><i><br><u>Today's Quote</u></i></b><marquee direction="left"><p><i>"Live as if you were to die tomorrow. Learn as if you were to live forever"<i></marquee></div></p>
+            <div class="body">   
+                <div class="left">
+                      <b>TOPICS<b><br>
+                      <br>
+                      <a href="#" onclick="myFunction('inspirational')">Inspirational</a><br>
+                      <a href="#" onclick="myFunction('happiness')">Happiness</a><br>
+                      <a href="#" onclick="myFunction('music')">Music</a><br>
+                      <a href="#" onclick="myFunction('love')">Love</a><br>
+                    </div>
+               
+                <div id="inspirational" class="Inspirational">
+                    <div style="position:absolute; left: 400px; top: 300px; line-height:100%"> 
+                        <b><u>INSPIRATIONAL QUOTES</u></b><br><br>
+                        <p></p><p><i>" The best and most beautiful things in the world cannot be seen or even<br> touched - they must be felt with the heart "</i><br>
+                        <pre>                                                           <big>-Hellen keller</big></pre></p>
+                        
+                        <p><br><br><i>" We know what we are, but know not what we may be"</i><br>
+                        <pre>                                                           <big>-William Shakespeare</pre></big></p>
+                        <p><br><br><i>"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship"</i><br>
+                        <pre>                                                          <big>-Buddha</pre></big></p>
+                         <p><br><br><i>"I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion"</i><br>
+                        <pre>                                                          <big>-Muhammad Ali</pre></big></p>
+
+
+                     </div>
+                </div>
+                <div id="love" class="Love">
+                     <div style="position: absolute;  left: 400px; top: 300px; line-height:100%"> 
+                        <b><u><p><i>LOVE QUOTES<i></u></b><br><br>
+                        <p></p><p><i>" Immature love says: 'I love you because I need you.' Mature love says 'I need you because I love you' "</i><br>
+                        <pre>                                                           <big>-Erich Fromm</big></pre></p>
+                        
+                        <p><br><br><i>" Keep love in your heart. A life without it is like a sunless garden when the flowers are dead"</i><br>
+                        <pre>                                                           <big>-Oscar Wilde</pre></big></p>
+                        <p><br><br><i>"Love is when the other person's happiness is more important than your own"</i><br>
+                        <pre>                                                          <big>-H. Jackson Brown</pre></big></p>
+                         <p><br><br><i>"Being deeply loved by someone gives you strength, while loving someone deeply gives you courage"</i><br>
+                        <pre>                                                          <big>-Lao Tzu</pre></big></p>
+
+
+                     </div>
+                </div>
+
+                <div id="happiness" class="Happiness">
+                     <div style="position: absolute;  left: 400px; top: 300px; line-height:100%"> 
+                        <b><u>HAPPINESS QUOTES</u></b><br><br>
+                        <p></p><p><i>" Happiness is when what you think, what you say, and what you do are in harmony.   "</i><br>
+                        <pre>                                                        <big>-Mahatma Gandhi</big></pre></p>
+                        
+                        <p><br><br><i>" True happiness comes from the joy of deeds well done, the zest of creating things new."</i><br>
+                        <pre>                                              <big>-Antoine de Saint-Exupery</pre></big></p>
+                        <p><br><br><i>"Love is when the other person's happiness is more important than your own"</i><br>
+                        <pre>                                                          <big>-H. Jackson Brown</pre></big></p>
+                         <p><br><br><i>"True happiness... is not attained through self-gratification, but through fidelity to a worthy purpose"</i><br>
+                        <pre>                                                         <big>-Helen Keller</pre></big></p>
+                    </div>
+                </div>
+                <div id="music" class="Music">
+                    <div style="position: absolute;  left: 400px; top: 300px; line-height:100%"> 
+                        <b><u>MUSIC QUOTES</u></b><br><br>
+                        <p><br><br><i>"Music can change the world because it can change people"</i><br>
+                        <pre>                                                          <big>-Bono</pre></big></p>
+                        <p></p><p><i>" Music expresses that which cannot be said and on which it is impossible to be silent"</i><br>
+                        <pre>                                                        <big>-Victor Hugo</big></pre></p>
+                        
+                        <p><br><br><i>" One good thing about music, when it hits you, you feel no pain"</i><br>
+                        <pre>                                              <big>-Bob Marley</pre></big></p>
+                       
+                         <p><br><br><i>"Next to the Word of God, the noble art of music is the greatest treasure in the world"</i><br>
+                        <pre>                                                         <big>-Martin Luther</pre></big></p>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+    Copyright © Quotegallery.com
+    <p  align="right"><i> Posted by : AKHIL K<i/></p>
+    </footer>
+</html>
+
