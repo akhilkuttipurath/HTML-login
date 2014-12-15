@@ -6,15 +6,23 @@ body {
     background-repeat:no-repeat;*/
 }
 header { 
-	background-color: #ADD8E6;
+     
+            width : 1285px;
+            height: 86px;
+           background-color: #2F4F4F;
+            font-size: 50px;
+            text-align: center;
+            color : #20B2AA;
+	/*background-color: #CDE1E0;
 	font-family: Courier, monospace;
     font-style: oblique;
     font-size: 50px;
     color: grey;
     text-align:center;
     padding:40px 0;
-    width: 100%;	 
+    width: 100%;	*/
 }
+
 nav { 
     font-color:lightgreen;
     line-height:30px;
@@ -37,7 +45,7 @@ section {
 
 footer {
     background-color:#ADD8E6;    
-    color:blue;
+    color:#2F4F4F;
     clear:both;
     text-align:center;
     padding:5px;	 	 
